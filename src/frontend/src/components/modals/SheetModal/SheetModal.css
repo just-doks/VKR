@@ -1,0 +1,209 @@
+@import "#css/myColors.css";
+
+.react-modal-sheet-container {
+    border-top-left-radius: 16px !important;
+    border-top-right-radius: 16px !important;
+    background-color: rgb(240, 240, 240) !important;
+}
+
+.access-badge-1 {
+    display: flex;
+    border-radius: min(2.5vw + 4px, 14px);
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: min(2.5vw + 8px, 18px);
+    font-weight: 500;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.ab-allow {
+    background-color: rgb(0, 205, 14);
+}
+.ab-deny {
+    background-color: rgb(255, 33, 33);
+}
+
+.sheet-modal .sm-window {
+    margin: 0px 10px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.sheet-modal .sm-hstack {
+    align-items: center;
+    padding: 10px 15px;
+    flex-wrap: wrap;
+}
+
+.sheet-modal .sm-hr {
+    margin: 0;
+}
+
+.sheet-modal label {
+    font-size: min(2.5vw + 14px, 24px);
+    font-weight: 500;
+    padding-bottom: 2px;
+}
+
+.day-button {
+    --day-button-color: #fff;
+    --day-button-bg: hsl(0, 0%, 70%);
+    --day-btn-bg: hsl(var(--bg-h), var(--bg-s), var(--bg-l));
+
+    display: flex;
+    cursor: pointer;
+    font-size: min(5vw + 2px, 22px);
+    font-weight: 500;
+    padding: 2px 14px 3px 14px;
+    border-radius: 20px;
+    border-width: 0;
+    text-align: center;
+
+    color: var(--day-button-color);
+}
+.day-button * {
+    cursor: inherit;
+    user-select: none;
+    text-wrap: balance;
+}
+.day-button:disabled {
+    cursor: default;
+}
+
+.day-btn-default {
+    --day-button-bg: hsl(0, 0%, 75%);
+    --bg-h: 0;
+    --bg-s: 0%;
+    --bg-l: 75%;
+    background-color: hsl(var(--bg-h), var(--bg-s), var(--bg-l));
+    background-color: hsl(0, 0%, 75%);
+    transition: background-color 200ms ease-out;
+}
+
+.day-btn-selected {
+    --day-button-bg: hsl(216, 100%, 50%); 
+    --bg-h: 216;
+    --bg-s: 100%;
+    --bg-l: 50%;
+    background-color: hsl(var(--bg-h), var(--bg-s), var(--bg-l));
+    background-color: hsl(216, 100%, 50%);
+    transition: background-color 200ms ease-out;
+}
+
+@media (hover: hover) {
+    .day-btn-default:hover {
+        background-color: hsl(0, 0%, 80%);
+    }
+    .day-btn-default:hover:disabled {
+        background-color: hsl(var(--bg-h), var(--bg-s), var(--bg-l));
+    }
+    .day-btn-selected:hover {
+        background-color: hsl(216, 100%, 55%);
+    }
+    .day-btn-selected:hover:disabled {
+        background-color: hsl(var(--bg-h), var(--bg-s), var(--bg-l));
+    }
+}
+
+.day-btn {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    border-radius: min(5vw + 2px, 22px);
+}
+.day-btn > input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+}
+.day-btn > span {
+    position: relative;
+    flex: 1 1 auto;
+
+    --day-btn-color: hsl(0, 0%, 45%);
+    --day-btn-bg: hsl(0, 0%, 86%);
+    --active-day-btn-color: #fff;
+    --active-day-btn-bg: hsl(216, 100%, 50%);
+
+    display: inline-block;
+    -webkit-user-select: none;
+    user-select: none;
+
+    vertical-align: middle;
+    text-align: center;
+
+    font-size: min(5vw + 4px, 24px);
+    font-weight: 500;
+    padding: 2px 14px 3px 14px;
+    padding: 0 min(5vw - 2px, 18px);
+    padding-top: 2px;
+    padding-bottom: 3px;
+    
+    color: var(--day-btn-color);
+    background-color: var(--day-btn-bg);
+    border: 0;
+    border-radius: min(5vw + 4px, 24px);
+    cursor: pointer;
+    transition: color 250ms ease-out, 
+        background-color 250ms ease-out;
+}
+.day-btn:active:hover > span {
+    transition: background-color 150ms ease-out;
+}
+.day-btn:active:hover > input:not(:checked) + span {
+    background-color: hsl(0, 0%, 81%);
+}
+
+.day-btn > input:checked + span {
+    color: var(--active-day-btn-color);
+    background-color: var(--active-day-btn-bg);
+}
+.day-btn:active:hover > input:checked + span {
+    background-color: hsl(216, 100%, 45%);
+}
+
+.time-cell {
+    border: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: lightgray;
+    background-color: #fff;
+    pointer-events: none;
+
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    font-size: 20px;
+    text-align: center;
+
+    user-select: none;
+}
+
+.time-cell:focus {
+    outline: none;
+    box-shadow: none;
+    background-color: #fff;
+
+
+}
+
+.sm-time-cell {
+    align-items: center;
+}
+
+.sm-time-cell * {
+    font-size: min(5vw, 20px);
+}
+.sm-time-cell > span {
+    font-size: min(2.5vw + 12px, 20px);
+}
+.sm-time-cell > * + * {
+    margin-left: 5px;
+}

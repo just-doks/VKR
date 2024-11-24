@@ -1,0 +1,32 @@
+
+.rules-name {
+    text-align: center;
+}
+
+.btns-horizontal {
+    flex: 1 1 0;
+    justify-content: space-between;
+}
+
+.small-list-btn {
+    padding-left: 12px;
+    padding-right: 12px;
+
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+
+.list-name-stack {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.add-btn {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.small-btns-stack {
+    align-content: center;
+}

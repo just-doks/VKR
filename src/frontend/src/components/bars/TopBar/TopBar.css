@@ -1,0 +1,144 @@
+@import "#css/myColors.css";
+
+.topbar-title {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-shrink: 1;
+    box-sizing: border-box;
+    border: none;
+
+    background-color: var(--my-blue);
+
+    height: 45px;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0px;
+    padding: 0px;
+
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 2;
+    min-width: 320px;
+}
+
+.topbar-backpanel {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-shrink: 1;
+    box-sizing: border-box;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--my-border-gray);
+
+    background-color: white;
+
+    height: 40px;
+    min-width: 320px;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0px;
+    padding: 2px;
+    padding-bottom: 3px;
+
+    position: fixed;
+    top: 45px;
+    right: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+.title-color {
+    color: white
+}
+
+.backbtn {
+    border: none;
+    border-radius: 14px;
+    background-color: white;
+    color: var(--my-bright-blue);
+    display: flex;
+    align-content: center;
+
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 10px;
+    margin-left: 4px;
+
+    transition: background-color 100ms ease-in;
+}
+
+
+.backbtn:active:hover {
+    background-color: var(--my-aqua);
+    transition: background-color 40ms ease-out;
+}
+
+.backbtn * {
+    cursor: pointer;
+}
+
+.backbtn-svg {
+    height: 22px;
+    width: auto;
+}
+
+.backbtn-label {
+    display: inline-block;
+    line-height: 20px;
+    font-size: 18px;
+    user-select: none;
+}
+
+.savebtn {
+    --save-blue: #1888f7;
+    border: solid;
+    border-color: var(--my-bright-blue);
+    border-radius: 14px;
+    border-width: 1px;
+    background-color: white;
+    color: var(--save-blue);
+    display: flex;
+    align-content: center;
+
+    padding-left: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 8px;
+
+    margin-right: 6px;
+    transition: background-color 100ms ease-in;
+}
+
+.savebtn * {
+    cursor: pointer;
+}
+
+.savebtn:active:hover {
+    background-color: var(--my-aqua);
+    transition: background-color 40ms ease-out;
+}
+
+.savebtn-label {
+    display: inline-block;
+    line-height: 20px;
+    font-size: 16px;
+    user-select: none;
+}
+
+@media (hover: hover) {
+    .savebtn:hover {
+        background-color: var(--my-light-aqua);
+    }
+    .backbtn:hover {
+        background-color: var(--my-light-aqua);
+    }
+}

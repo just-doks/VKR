@@ -1,0 +1,20 @@
+
+.status-style {
+    background-color: limegreen;
+}
+
+.rounded-corners {
+    border-radius: 12px !important;
+}
+
+.label-style {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.switch-button {
+    height: auto;
+    width: 100%;
+    font-size: 1.2rem !important;
+    border-width: 2px !important;
+}

@@ -1,0 +1,61 @@
+
+.duo-btn-wrapper {
+    display: inline-block;
+}
+.duo-btn-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: min(5vw + 2px, 22px);
+}
+
+.duo-btn-group > label > input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+}
+
+.duo-btn-group > label > span {
+    --duo-btn-color: rgb(105, 105, 105);
+    --duo-btn-bg: #fff;
+    --duo-btn-border-color: rgb(211, 211, 211);
+    --active-duo-btn-color: #fff;
+    --active-duo-btn-bg: hsl(216, 100%, 45%);
+    --active-duo-btn-border-color: hsl(216, 100%, 45%);
+
+    display: block;
+    
+    align-items: center;
+    justify-content: center;
+    
+    -webkit-user-select: none;
+    user-select: none;
+    text-wrap: nowrap;
+    text-align: center;
+    font-size: min(5vw - 2px, 18px);
+    font-weight: 500; 
+    padding: 5px min(5vw - 6px, 14px);
+    
+    color: var(--duo-btn-color);
+    background-color: var(--duo-btn-bg);
+    border: 1px solid var(--duo-btn-border-color);
+    border-radius: min(5vw + 2px, 22px);
+    cursor: pointer;
+    transition: color 100ms ease-out, 
+        background-color 100ms ease-out,
+        border-color 100ms ease-out;
+}
+.duo-btn-group > label:not(:last-child) > span {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right-width: 0;
+}
+.duo-btn-group > label:last-child > span {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left-width: 0;
+}
+.duo-btn-group > label > input:checked + span {
+    color: var(--active-duo-btn-color);
+    background-color: var(--active-duo-btn-bg);
+    border-color: var(--active-duo-btn-border-color);
+}

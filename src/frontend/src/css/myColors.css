@@ -1,0 +1,16 @@
+.bg-myBlue {
+    background-color: #2a2a90
+}
+
+:root {
+    --my-blue: #2a2a90;
+    --my-bright-blue: #1888f7;
+    --my-gray: #dee2e6;
+    --my-border-gray: #dee2e6;
+    --my-button-gray: #e3e3e3;
+    --my-off-circle-gray: #b3b3b3;
+    --my-light-gray: #f0f0f0;
+    --my-aqua: #d5f5fd;
+    --my-light-aqua: #eef8fb;
+    --my-dark-white: #fafbff;
+}

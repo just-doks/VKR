@@ -1,0 +1,46 @@
+@import '#css/myColors.css';
+
+/* стиль окна с компонентами */
+.main-window-style {
+    margin-top: 45px;
+    margin-bottom: 60px;
+    background-color: white !important;
+}
+
+/* стиль пустого окна */
+.blank-window {
+    padding-top: 45px;
+    padding-bottom: 60px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* стиль иконки ошибки */
+.error-icon {
+    width: 70px; 
+    height: 70px;
+    fill: var(--my-blue);
+    align-self: center;
+}
+
+/* стиль сообщения ошибки */
+.error-msg {
+    text-align: center;
+    text-wrap: balance;
+    align-self: center;
+    color: rgb(95, 95, 95);
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* стиль иконки загрузки */
+.loader-icon {
+    width: 70px !important; 
+    height: 70px !important;
+    align-self: center;
+    border-width: 8px !important;
+}

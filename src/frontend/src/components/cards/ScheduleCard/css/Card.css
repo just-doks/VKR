@@ -1,0 +1,99 @@
+@import '#css/myColors.css';
+
+.schedule-card {
+    cursor: pointer;
+    user-select: none;
+    background-color: var(--my-dark-white);
+    border-radius: 18px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--my-gray);
+    padding: 8px;
+}
+.schedule-card * {
+    cursor: pointer;
+    user-select: none;
+}
+
+.schedule-card-label {
+    font-size: min(5vw, 20px);
+    font-weight: 500;
+    text-align: end;
+}
+
+.schedule-card .sc-access-badge {
+    border-radius: min(2.5vw + 2px, 12px);
+    font-size: min(2.5vw + 6px, 16px);
+}
+
+.day-badges {
+    display: flex;
+}
+
+.card-time-range-label {
+    border: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: lightgray;
+
+    background-color: white;
+    padding-left: 6px;
+    padding-right: 6px;
+
+    font-size: min(5vw - 2px, 18px);
+    text-align: center;
+}
+.card-time-range > label + label {
+    margin-left: 6px;
+}
+
+.card-time-cell {
+    -webkit-user-select: none; /* Safari */
+    user-select: none;
+    border: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: lightgray;
+
+    padding-left: 6px;
+    padding-right: 6px;
+
+    font-size: min(5vw - 2px, 18px);
+    text-align: center;
+}
+.card-time-cell:disabled {
+    background-color: white;
+    color: black;
+}
+.card-time-cell:disabled::-webkit-calendar-picker-indicator {
+    display: none;
+}
+/* Отключение иконки у поля ввода в Chrome: */
+/* https://stackoverflow.com/questions/61934148/hide-the-icon-on-a-html-time-input-field-in-chrome */
+
+.schedule-card-time-range > * + * {
+    margin-left: 6px;
+}
+
+/* grid */
+.sc-grid-wrapper {
+    display: grid;
+    grid-template-columns: min-content auto;
+    row-gap: 6px;
+    column-gap: 6px;
+    align-items: center;
+}
+.sc-grid-label {
+    grid-column: 1;
+}
+.sc-grid-access-badge {
+    grid-column: 2;
+    grid-row: 1;
+}
+.sc-grid-day-badges {
+    grid-column: 2;
+    grid-row: 2;
+}
+.sc-grid-time-range {
+    grid-column: 2;
+}

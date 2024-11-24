@@ -1,0 +1,20 @@
+
+.icon-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.off-circle {
+    fill: #a3a3a3;
+    width: 14px;
+    height: 14px;
+}
+
+.on-line {
+    fill: white;
+    width: 14px;
+    height: 14px;
+}

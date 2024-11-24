@@ -1,0 +1,25 @@
+
+.ip-address-form input {
+    display: flex;
+    width: calc(3ch + 10px);
+    padding: 2px 5px;
+    height: min-content;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    text-align: center;
+}
+.ip-address-form > label + span {
+    font-weight: 500;
+    margin: 0 2px;
+}
+
+.ip-address-form input::-webkit-inner-spin-button,
+.ip-address-form input::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

@@ -1,0 +1,44 @@
+@import './myColors.css';
+
+.btns-stack {
+    justify-self: center;
+    border-radius: 18px !important;
+    flex-wrap: nowrap !important;
+   
+}
+
+.btns-stack * {
+    --radius: 18px;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    
+    --bs-btn-color: rgb(105, 105, 105) !important;
+    --bs-btn-border-color: lightgray !important;
+    --bs-btn-bg: var(--my-dark-white) !important;
+
+}
+
+.left-btn {
+    border-right-width: 2px;
+    --my-green: #1cbc4c;
+    border-top-left-radius: var(--radius) !important;
+    border-bottom-left-radius: var(--radius) !important;
+
+    --bs-btn-active-color: #fff !important;
+    --bs-btn-active-bg: var(--my-green) !important;
+    --bs-btn-active-border-color: var(--my-green) !important;
+}
+
+.middle-btn {
+    z-index: 0;
+    --my-red: #f84242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--my-red);
+    --bs-btn-active-border-color: var(--my-red);
+}
+
+.right-btn { 
+    z-index: 0;
+    border-top-right-radius: var(--radius) !important;
+    border-bottom-right-radius: var(--radius) !important;
+}

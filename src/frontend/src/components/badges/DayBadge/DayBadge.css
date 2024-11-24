@@ -1,0 +1,18 @@
+
+.day-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: min(10vw - 6.5px, 33.5px);
+    border-radius: min(2.5vw, 10px);
+    background-color: rgb(13, 110, 253);
+    color: white;
+    padding-bottom: 1px;
+    font-size: min(3.75vw + 4px, 17px);
+    line-height: min(5vw + 6px, 26px);
+    font-weight: 400;
+}
+
+.day-badge + .day-badge {
+    margin-left: min(2.5vw - 4px, 6px);
+}

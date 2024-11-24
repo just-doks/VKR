@@ -1,0 +1,65 @@
+
+.allow-deny-btn-group {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    border-radius: min(5vw + 2px, 22px);
+}
+
+.allow-deny-btn-group input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+}
+
+.allow-deny-btn-group > label {
+    position: relative;
+    flex: 1 1 auto;
+
+    --duo-btn-color: rgb(105, 105, 105);
+    --duo-btn-bg: #fff;
+    --duo-btn-border-color: rgb(211, 211, 211);
+
+    display: inline-block;
+    -webkit-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    text-align: center;
+    font-size: min(5vw - 2px, 18px);
+    padding: 5px min(5vw - 6px, 14px);
+    font-weight: 500;
+    color: var(--duo-btn-color);
+    background-color: var(--duo-btn-bg);
+    border: 1px solid var(--duo-btn-border-color);
+    border-radius: min(5vw + 2px, 22px);
+    cursor: pointer;
+    transition: color 100ms ease-out, 
+        background-color 100ms ease-out,
+        border-color 100ms ease-out;
+}
+.allow-deny-btn-group > label:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right-width: 0;
+}
+.allow-deny-btn-group > label:nth-child(n+3) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left-width: 0;
+}
+.allow-deny-btn-group input:checked + label {
+    color: var(--active-duo-btn-color);
+    background-color: var(--active-duo-btn-bg);
+    border-color: var(--active-duo-btn-border-color);
+}
+
+.allow-btn-label {
+    --active-duo-btn-color: #fff;
+    --active-duo-btn-bg: #1cbc4c;
+    --active-duo-btn-border-color: #1cbc4c;
+}
+.deny-btn-label {
+    --active-duo-btn-color: #fff;
+    --active-duo-btn-bg: #f84242;
+    --active-duo-btn-border-color: #f84242;
+}

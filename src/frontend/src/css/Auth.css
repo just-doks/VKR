@@ -1,0 +1,46 @@
+@import './myColors.css';
+
+.auth-window {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--my-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.proxy-title {
+    text-align: center;
+    align-self: center;
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 600;
+    font-size: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+
+    z-index: 100;
+}
+
+.login-card {
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-bottom: 30px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--my-dark-white);
+    border-width: 1px;
+    border: solid;
+    border-radius: 18px;   
+    border-color: var(--my-bright-blue);
+    box-shadow:0px 0px 0px 2px var(--my-bright-blue) inset;
+
+    z-index: 200;
+
+}

@@ -1,0 +1,24 @@
+@import "#css/myColors.css";
+
+.addr-badge-new {
+    background-color: var(--my-bright-blue) !important;
+    font-size: 12px !important;
+    width: 60px !important;
+}
+
+.addr-badge-del {
+    background-color: red !important;
+    width: 60px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+}
+
+.addr-label {
+    display: inline-block;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    font-size: 20px;
+    
+    line-height: 22px;
+    padding-bottom: 2px;
+}

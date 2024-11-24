@@ -1,0 +1,40 @@
+@import '#css/myColors.css';
+
+.big-button {
+    display: block;
+    color: black;
+    border-radius: 12px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--my-gray);
+    background-color: var(--my-dark-white);
+    transition: background-color 120ms ease-out, box-shadow 100ms ease-in;
+}
+
+.big-button * {
+    cursor: pointer;
+    user-select: none;
+    text-wrap: balance;
+}
+.big-button:disabled * {
+    cursor: default;
+}
+ @media (hover: hover) {
+    .big-button:hover {
+        background-color: var(--my-light-aqua);
+    }
+    .big-button:hover:disabled {
+        background-color: var(--my-dark-white);
+        transition: background-color none;
+    }
+ }
+
+.big-button:active:hover {
+    box-shadow: 0 0 8px 0px rgb(200, 200, 200) inset;
+    transition: box-shadow 50ms ease-out;
+}
+
+.big-button:active:hover:disabled {
+    box-shadow: none;
+    transition: box-shadow none;
+}

@@ -1,0 +1,45 @@
+
+.menubttn-stack {
+    flex: 1 1 0 !important;
+    cursor: pointer;
+    width: 0 !important;
+}
+.menubttn-stack * {
+    cursor: pointer;
+}
+
+.menubttn-icon {
+    fill: white;
+    height: 35px; 
+    width: 35px;
+}
+
+@media (display-mode: standalone) {
+    .menubttn-icon {
+        height: 32px !important; 
+        width: 32px !important;
+    }
+}
+
+.menubttn-label {
+    color: white;
+    font-size: 11px;
+    user-select: none;
+}
+
+@media (hover: hover) {
+    .menubttn-stack:hover .menubttn-icon {
+        fill: lightgray;
+    }
+    .menubttn-stack:hover .menubttn-label {
+        color: lightgray;
+    }
+}
+
+.menubttn-stack:active:hover .menubttn-icon {
+    fill: gray;
+}
+.menubttn-stack:active:hover .menubttn-label {
+    color: gray;
+}
+

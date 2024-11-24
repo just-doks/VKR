@@ -1,0 +1,27 @@
+@import '#css/myColors.css';
+
+.small-button {
+    display: inline-block;
+    color: black;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--my-gray);
+    background-color: var(--my-dark-white);
+    transition: background-color 120ms ease-out, box-shadow 100ms ease-in;
+}
+
+.small-button * {
+    cursor: pointer;
+    user-select: none;
+}
+ @media (hover: hover) {
+    .small-button:hover {
+        background-color: var(--my-light-aqua);
+    }
+ }
+
+.small-button:active:hover {
+    box-shadow: 0 0 10px 0px rgb(200, 200, 200) inset;
+    transition: box-shadow 50ms ease-out;
+}

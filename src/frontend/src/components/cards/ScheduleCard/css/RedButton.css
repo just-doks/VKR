@@ -1,0 +1,58 @@
+@import '#css/myColors.css';
+
+.red-button {
+    --my-bg-red: #ff5068;
+    --my-border-red: #ffc9d0;
+    display: flex;
+    border-radius: 18px;
+    border: solid;
+    border-width: 2px;
+    border-color: var(--my-border-red);
+    color: white;
+    background-color: var(--my-bg-red);
+    transition: background-color 120ms ease-out, box-shadow 100ms ease-in;
+    cursor: pointer;
+    height: 80%;
+    width: 84px;
+    justify-content: center;
+    align-items: center;
+}
+
+.red-button * {
+    cursor: inherit;
+    user-select: none;
+    text-wrap: balance;
+}
+
+.red-button > svg {
+    filter: drop-shadow( 0px 0px 5px rgba(80, 0, 0, 0.7));
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.red-button:disabled {
+    cursor: default;
+}
+
+@media (hover: hover) {
+    .red-button:hover {
+        --my-bg-red-hover: #ff7486;
+        background-color: var(--my-bg-red-hover);
+    } 
+    .red-button:hover:disabled {
+        background-color: var(--my-bg-red);
+        transition: background-color none;
+    }
+}
+
+.red-button:active:hover {
+    background-color: #ff144b;
+    box-shadow: 0 0 8px 0px rgb(140, 46, 46) inset;
+    transition: box-shadow 50ms ease-out, background-color 50ms ease-out;
+}
+
+.red-button:active:hover:disabled {
+    box-shadow: none;
+    transition: box-shadow none;
+}

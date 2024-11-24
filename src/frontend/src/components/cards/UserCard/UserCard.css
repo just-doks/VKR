@@ -1,0 +1,15 @@
+
+.rounded-corners {
+    border-radius: 12px !important;
+}
+
+.label-style {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 22px;
+
+}
+
+.card-body-style {
+    flex: none !important;
+}
